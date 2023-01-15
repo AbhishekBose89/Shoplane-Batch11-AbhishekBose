@@ -21,11 +21,17 @@ const Home = () => {
     <div className='container mt-3'>
       {error && <h2 className='mt-3'>No Product To Show</h2>}
       <div className='row'>
-        {products?.map((product, index) => {
-          return (<div className='col-md-3' key={index}><ProductCart items={product} /></div>)
-        })}
+        {products.length === 0 ? (<div className="d-flex justify-content-center align-items-center mt-5">
+          <div className="spinner-border text-secondary" role="status">
+            <span className='visually-hidden'>Loading...</span>
+          </div>
+          <p className='loading'>Loading...</p>
+        </div>)
+          : (products?.map((product, index) => {
+            return (<div className='col-md-3' key={index}><ProductCart items={product} /></div>)
+          }))}
 
-        
+
 
       </div>
     </div>
