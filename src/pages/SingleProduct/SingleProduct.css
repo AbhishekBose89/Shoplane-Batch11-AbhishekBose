@@ -66,3 +66,19 @@
   color: gray;
   padding-right: 10px;
 }
+@media (max-width: 768px) {
+  .product-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 320px;
+    width: 90%;
+  }
+  .product-image-wrapper{
+    width: 85%;
+  }
+  .product-image{
+    width: 300px;
+    height: 300px;
+  }
+}

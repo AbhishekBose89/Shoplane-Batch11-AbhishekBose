@@ -29,3 +29,12 @@
 .add-favorites a span {
   margin-left: 0.5rem;
 }
+@media (max-width: 665px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 320px;
+  }
+}
+

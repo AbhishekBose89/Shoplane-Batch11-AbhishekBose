@@ -84,3 +84,8 @@
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 768px) {
+  .signup{
+    margin-top: 320px;
+  }
+}
