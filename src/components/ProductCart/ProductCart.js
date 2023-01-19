@@ -44,7 +44,7 @@ const ProductCart = (props) => {
                 handleClick(product)
             }
             }>
-                < div className='card-body'>
+                < div className='card-body card-main-child'>
                     <div className="favorite-icon">
                         <FaHeart
                             color={isFavorite ? "red" : "gray"}
@@ -63,7 +63,7 @@ const ProductCart = (props) => {
                     </div>
                     <img src={product.image} className="card-img-top" alt={product.title} />
                     <h5 className="card-title"><span>Brand : </span>{product.title}</h5>
-                    <div className="card-body">
+                    <div className="card-body card-details">
                         <div className='rating'>
                             <h6><StarRatings rating={product.rating.rate}
                                 starRatedColor="goldenrod"
